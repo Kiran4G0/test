@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js14</title>
+  </head>
+  <body>
+    <h3>demo on parsing</h3>
+
+	<script>
+	  let x="6", y="25";
+	  
+	  //auto parsing
+	  document.write(x-y, '<br>');
+	  document.write(x*y, '<br>');	  
+	  document.write(x/y, '<br>');	  
+	  y--;
+	  document.write(y, '<br>');
+	  
+	  document.write(x+y, '<br>'); //no auto parse
+	  //manual parsing
+	  let res=window.parseInt(x)+window.parseInt(y);
+	  document.write(res, '<br>');	  
+	  res = +x+ +y;
+	  document.write(res, '<br>');	  
+	  
+	  let a="1000", b="45";
+	  document.write(a>b, '<br>');	//no parse  	  
+	  document.write(+a>+b, '<br>');  //manual parse	
+	  
+	  let st="ram";
+	  document.write( parseInt(st) ,'<br>');
+	  document.write( parseFloat("apple123") ,'<br>');
+	  document.write( +st ,'<br>');	  
+	</script>
+
+  </body>
+</html>
+	
+		 
+	
+	

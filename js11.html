@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title>JS11</title>
+ </head>
+ <body>
+	<h3>demo on js operators</h3>
+
+	<script>
+		let x=17, y=6;
+		document.write('X val	', x, '<br>');
+		document.write('Y val	', y, '<br>');
+
+		//arithmatic ope	+	-	*	/	%     **
+		document.write(x+y, `<br>`);
+		document.write(y*10, `<br>`);
+		document.write(y**3, `<br>`);
+		document.write(x%y, `<br>`);
+
+		//relational ope		>	 <    >=     <=    ==    !=     ===    !==
+		document.write(x>0, `<br>`);
+		document.write(y<=0, `<br>`);
+		let z="6";
+		document.write(y==z, `<br>`);
+		document.write(y===z, `<br>`);
+		document.write(y!=z, `<br>`);
+		document.write(y!==z, `<br>`);
+
+		//logical ope		&&	||		!
+		document.write( y>=1 && y<=10, `<br>`);
+
+		/*	assignment ope		=
+			shorthand ope			+=		-=			/=			*=			%=		**=		  */
+		x+=40;		//x=x+40;
+		y*=10;		//y=y*10;
+		document.write(x,`<br>`, y, `<br>`);
+
+		//concate ope		+
+		document.write("rama"+"rao"+"<br>");
+		document.write(100+"mangos<br>");
+		document.write(20+true+"<bR>")
+
+		/*	increment ope		++  =>	currval+1			
+									++var	  			   var++	  
+								(pre incre)		(post incre)
+
+			decrement			--	  =>	currval-1
+									--var	  					var--		  
+								(pre dere)				(post decre)		*/
+		++x;		//post incre
+		document.write(x,`<bR>`);
+		x++;		//pre incre
+		document.write(x,`<bR>`);
+		let res=10*x++;	//590		60
+		//let res=10*++x;	//600		60
+		document.write(x,`<bR>`, res, '<bR>');
+
+		//conditional ope		?:				condition ? step : step
+
+		document.write(y%2===0 ? "Even number" : "Odd number");
+	</script> 
+
+ </body>		 
+</html>
